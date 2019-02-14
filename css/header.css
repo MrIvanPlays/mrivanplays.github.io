@@ -1,0 +1,471 @@
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+a {
+	color: #337ab7;
+	text-decoration:none;
+}
+
+@font-face {
+	font-family: DidactGothic-Regular;
+	src: url('../DidactGothic-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+#MainContainer {
+	width:100%;
+	min-height:100%;
+	position:relative;
+	background: #e0e0e0;
+}
+
+#MainHeader {
+	display:block;
+	width:100%;
+	font-family: DidactGothic-Regular
+}
+
+#MainFooter {
+	position:absolute;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	height:236px;
+	border-top:1px solid #808080;
+	background:#333333;
+	text-align:center;
+}
+
+#MainFooter .Sections {
+	width:100%;
+	margin:auto;
+	max-width:1000px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content:space-between;
+}
+
+#MainFooter .Section {
+	flex: 1;
+}
+
+#MainFooter .Section h3 {
+	margin:20px 0px 16px 0px;
+	padding-bottom:20px;
+	font-size:18px;
+	font-weight:normal;
+	border-bottom:2px solid #98ca3c;
+	color:#ffffff;
+}
+
+#MainFooter .Section p {
+	margin-top:4px;
+	margin-bottom:16px;
+	text-align:left;
+	font-size:14px;
+	color:#cccccc;
+	line-height:150%;
+}
+
+#MainFooter .Section img {
+	margin-top:8px;
+}
+
+#MainFooter .Bottom {
+	position:absolute;
+	bottom:0px;
+	width:100%;
+	text-align:center;
+}
+
+#MainFooter .Bottom  div {
+	display:inline-block;
+	border-top: 1px solid #808080;
+	width:100%;
+	max-width:1000px;
+	font-size:14px;
+	color:#999999;
+	padding-top:12px;
+	padding-bottom:12px;
+}
+
+#MainContent {
+	display:block;
+	width:100%;
+	padding-bottom:236px;
+	text-align:center;
+}
+
+#TopMenu {
+	width:100%;
+	background:#337ab7;
+	text-align:right;
+}
+
+#TopMenu a {
+	display:inline-block;
+	padding-left:16px;
+	padding-right:16px;
+	padding-top:30px;
+	padding-bottom:12px;
+	color:#ffffff;
+	cursor:pointer;
+	font-size:20px;
+	-webkit-transition: background-color 300ms linear;
+    -moz-transition: background-color 300ms linear;
+    -o-transition: background-color 300ms linear;
+    -ms-transition: background-color 300ms linear;
+    transition: background 300ms linear;
+}
+
+#TopMenu a:hover {
+	background:#98ca3c;
+}
+
+#MainMenu {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	width:100%;
+	background:#98ca3c;
+	border-bottom:1px solid #bbbbbb;
+}
+
+#MainMenu a {
+	flex-grow: 1;
+	padding-top:16px;
+	padding-bottom:16px;
+	padding-left:16px;
+	padding-right:16px;
+	color: #ffffff;
+	height:5%;
+	text-align:center;
+	cursor:pointer;
+	font-size:20px;
+	-webkit-transition: background-color 300ms linear;
+    -moz-transition: background-color 300ms linear;
+    -o-transition: background-color 300ms linear;
+    -ms-transition: background-color 300ms linear;
+    transition: background 300ms linear;
+}
+
+#MainMenu #Logo > div {
+	position:relative;
+	display:inline-block;
+	width:123px;
+	height:10px;
+}
+
+#MainMenu #Logo > div > div {
+	position:absolute;
+	left:-123px;
+	top:-190px;
+	width:384px;
+	height:384px;
+	background-image:
+		radial-gradient(
+		  circle at center center,
+		  rgba(255, 255, 255, 1),
+		  rgba(255, 255, 255, 0),
+		  rgba(255, 255, 255, 0)
+		);
+	pointer-events:none;
+}
+
+#MainMenu #Logo img {
+	position:absolute;
+	left:0px;
+	top:-65px;
+	width:128px;
+	-webkit-transition: width 300ms linear, left 300ms linear, top 300ms linear;
+    -moz-transition: width 300ms linear, left 300ms linear, top 300ms linear;
+    -o-transition: width 300ms linear, left 300ms linear, top 300ms linear;
+    -ms-transition: width 300ms linear, left 300ms linear, top 300ms linear;
+    transition: width 300ms linear, left 300ms linear, top 300ms linear;
+}
+
+#MainMenu a:hover {
+	background:#337ab7;
+}
+
+#MainMenu #Logo:hover {
+	background:rgba(0, 0, 0, 0);
+}
+
+#MainMenu #Logo:hover img {
+	width:145px;
+	top: -70px;
+}
+
+h1 {
+	text-align:center;
+	font-size:20px;
+	color:#337ab7;
+	font-weight:bold;
+}
+
+h2 {
+	text-align:center;
+	font-size:18px;
+	color:#98ca3c;
+	font-weight:bold;
+	margin-top:0px;
+}
+
+.Block {
+	display: inline-block;
+	width:484px;
+	vertical-align:top;
+	margin-left:8px;
+	margin-right:8px;
+	padding:16px;
+	border:1px solid #bbbbbb;
+	background:#ffffff;
+	border-radius:4px;
+	text-align:left;
+	margin-bottom:16px;
+}
+
+.BlockDouble {
+	width:984px;
+}
+
+.Block  h2 {
+	text-align:center;
+	margin-top:0px;
+	font-size:16px;
+	color:#98ca3c;
+}
+
+.Block  p {
+	font-size:14px;
+	margin-bottom:8px;
+}
+
+.MainButton {
+	color:#ffffff;
+	background:#337ab7;
+	display:inline-block;
+	padding:12px;
+	border-radius:4px;
+	font-size:20px;
+	cursor:pointer;
+}
+
+.MainButton:hover {
+	background:#98ca3c;
+}
+
+.Block li {
+	font-size:16px;
+}
+
+.Highlight {
+	color: #337ab7;
+	font-size:16px;
+}
+
+.InputSection {
+	position:relative;
+	width:100%;
+	border:1px solid #cccccc;
+	border-radius:4px;
+	padding:16px 4px 12px 4px;
+	margin-top:8px;
+}
+
+.SectionLabel {
+	position:absolute;
+	color:#98ca3c;
+	font-size:14px;
+	font-weight:bold;
+	padding-left:4px;
+	padding-right:4px;
+	background:#ffffff;
+	left:16px;
+	top:-10px;
+}
+
+.InputBlockRow {
+	width:100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.InputBlockRow .InputBlock {
+	padding-left:8px;
+	padding-right:8px;
+}
+
+ 
+	
+
+
+.InputBlock {
+	flex:1;
+}
+
+.InputBlock label {
+	display:block;
+	color:#666666;
+	font-size:12px;
+}
+
+.InputBlock input {
+	width:100%;
+}
+
+input[type="checkbox"] {
+	display:none;
+}
+
+.CheckmarkContainer {
+	display:block;
+    width: 40px;
+    height: 40px;
+	background:#cccccc;
+	position:relative;
+	border-radius:4px;
+	float:left;
+	margin-right:8px;
+}
+
+.Checkmark {
+	position:absolute;
+	left:16px;
+	top:8px;
+    width: 10px;
+    height: 20px;
+    border: solid #ffffff;
+    border-width: 0 6px 6px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+	display:none;
+}
+
+
+
+input:checked + .LabelBlock .CheckmarkContainer .Checkmark {
+	display:block;
+}
+
+input:checked + .LabelBlock .CheckmarkContainer {
+	background:#337ab7;
+}
+
+input:checked + .LabelBlock  {
+	background:#d3ff5f;
+}
+
+.LabelBlock {
+	display: block;
+	width:100%;
+	border:1px solid #cccccc;
+	border-radius:4px;
+	padding:8px;
+	margin-bottom:16px;
+}
+
+.LabelBlock h3 {
+	display:block;
+	margin:0px;
+	text-align:left;
+	font-size:15px;
+	margin-top:8px;
+	margin-left:56px;
+}
+
+.SmallCheckmarkContainer {
+	display:block;
+    width: 20px;
+    height: 20px;
+	background:#cccccc;
+	position:relative;
+	border-radius:4px;
+	float:left;
+	margin-right:8px;
+}
+
+.SmallCheckmark {
+	position:absolute;
+	left:8px;
+	top:4px;
+    width: 5px;
+    height: 10px;
+    border: solid #ffffff;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+	display:none;
+}
+
+.SmallLabelBlock {
+	display: block;
+	width:100%;
+}
+
+input:checked + .SmallLabelBlock .SmallCheckmarkContainer .SmallCheckmark {
+	display:block;
+}
+
+input:checked + .SmallLabelBlock .SmallCheckmarkContainer {
+	background:#337ab7;
+}
+
+#StudentData td {
+	font-size:12px;
+	padding-top:4px;
+	padding-bottom:4px;
+}
+
+#StudentData td:nth-child(2) {
+	font-size:14px;
+	font-weight:bold;
+}
+
+input[error="yes"] {
+	background:#ffb0b0;
+}
+
+.TimeTable { 
+	width:100%;
+	border-collapse: collapse;
+}
+
+.TimeTable tr:nth-child(2n) {
+	background:#dddddd;
+}
+
+.TimeTable tr:hover {
+	background:#ffcccc;
+}
+	
+.TimeTable  th {
+	text-align:center;
+}
+
+.TimeTable  td, th { 
+	border:1px solid #000000;
+	padding:6px;
+	font-size:14px;
+}
+
+.TeacherNameClass {
+	font-size:10px;
+}
