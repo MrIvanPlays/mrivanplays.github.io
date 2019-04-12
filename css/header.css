@@ -164,13 +164,13 @@ a {
 #MainMenu #Logo > div {
 	position:relative;
 	display:inline-block;
-	width:123px;
+	width:130px;
 	height:10px;
 }
 
 #MainMenu #Logo > div > div {
 	position:absolute;
-	left:-123px;
+	left:-130px;
 	top:-190px;
 	width:384px;
 	height:384px;
