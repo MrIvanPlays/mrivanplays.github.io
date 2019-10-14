@@ -1,80 +1,172 @@
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>MrIvanPlays Development</title>
-
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link href="css/main.css" rel="stylesheet" type="text/css">
-
-
+  <title>MrIvanPlays Development</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link href="./css/scrolling-nav.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet" />
 </head>
-<body cz-shortcut-listen="true">
-<div id="MainContainer">
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <header id="MainHeader">
-        <div id="TopMenu">
-            <br>
-            <br>
 
-
-        </div>
-        <div id="MainMenu">
-
-            <link rel="icon" href="favicon.ico">
-            <a href="https://mrivanplays.com/resources/">Spigot</a>
-            <a href="https://mrivanplays.com/repositories">Repositories</a>
-            <div style="text-align: center;">
-                <a href="index.html" id="Logo">
-                    <div>
-                        <div></div>
-                        <img src="logo2.png"></div>
-                </a>
-            </div>
-            <a href="https://mrivanplays.com/discord/">Discord</a>
-            <a href="javadocs.html">JavaDocs</a>
-
-        </div>
-    </header>
-    <content id="MainContent">
-        <div style="width:100%;background:#ffffff;border-bottom:1px solid #bbbbbb;">
-            <div style="height:30px"></div>
-            <h1>MrIvanPlays Development
-            </h1>
-            <h2></h2>
-            <div style="height:6px"></div>
-        </div>
-        <div style="height:16px"></div>
-
-
-        <div class="Block">
-            <h2>Hello!</h2>
-            <p>
-            <div style="text-align: center;">
-                Welcome to <span class="Highlight">MrIvanPlays Development</span></div>
-            <br>
-            </p>
-            <ul>
-
-                My name is Ivan and I code plugins and other stuff at Java from 3 years!
-                You can view the things i do at the top bar and by clicking at the buttons!
-            </ul>
-
-        </div>
-
+<body>
+<section id="home">
+	<nav class="navbar navbar-default navbar-fixed-top" role=navigation>
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
+					<span class=sr-only>Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><img src="./img/logo.png"></a>
+			</div>
+			<div class="collapse navbar-collapse" id="navbar-collapse-main">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#home">Home</a></li>
+					<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+					<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
+					<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#javadocs">JavaDocs</a></li>
+					<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+<div id="home">
+	<div class="landing-text">
+		<h1>MrIvanPlays Development</h1>
+		<h2 id="element"></h2>
+		<a href="#contact" class=" js-scroll-trigger btn btn-default btn-lg">Contact Me</a>
+	</div>
 </div>
-<footer style="padding:2rem 2rem 1rem;" id="footer" data-title="Най-долу">
-    <p>
+</section>
 
 
-        </span>
+<section id="about">
+	<div class="about">
+		<div class="container">
+			<div class="about-info">
+		    	<h1>ABOUT</h1>
+				<p>Hello! My name is Ivan and I do things on java for around 3 years! I am from Plovdiv, Bulgaria<br><br>
 
-    </p>
-    <p class="copyright ">© MrIvanPlays Development 2019 | All rights reserved.</p>
-</footer>
+				You can view my projects bellow!<br><br></p>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="portfolio">
+	<div class="portfolio">
+		<div class="container container-fluid">
+			<div class="portfolio-info">
+				<h1>PORTFOLIO</h1>
+				<p>See my projects in order to get information about what I do :)</p>
+			</div>
+			<div class="portfolio-cards row">
+				<div class="portfolio-card">
+					<a href="https://www.spigotmc.org/resources/skins-1-13-2-1-14-x.70829/" class="preview"><img src="./img/Skins.png"></a>
+					  <div class="projectName">
+    					<div class="text">Skins</div>
+  					  </div>
+					<ul class="stats">
+						<center><h3> Skins </h3></center>
+					</ul>
+				</div>
+				<div class="portfolio-card">
+					<a href="https://www.spigotmc.org/resources/titlewelcomemessage-1-8-x-1-14-x.57500/" class="preview"><img src="./img/TitleWelcomeMessage.png"></a>
+					<div class="projectName">
+    					<div class="text">TitleWelcomeMessage</div>
+  					  </div>
+					<ul class="stats">
+						<center><h3> TitleWelcomeMessage </h3></center>
+					</ul>
+				</div>
+				<div class="portfolio-card">
+					<a href="https://www.spigotmc.org/resources/announcementseverywhere-1-13-x-1-14-x.59510/" class="preview"><img src="./img/AnnouncementsEverywhere.png"></a>
+					<div class="projectName">
+    					<div class="text">AnnouncementsEverywhere</div>
+  					  </div>
+					<ul class="stats">
+						<center><h3> AnnouncementsEverywhere </h3></center>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="javadocs">
+	<div class="pricing">
+		<div class="container container-fluid">
+			<div class="pricing-info">
+				<h1>JAVADOCS</h1>
+				<p>All APIs I currently support are being listed here as buttons.</p>
+			</br>
+			</br>
+			</div>
+		 		  <center><a href="https://mrivanplays.com/javadocs/DependencyDownloader" class="btn btn-info btn-lg" role="button">DependencyDownloader</a>
+				  <a href="https://mrivanplays.com/javadocs/ICF/overview-summary.html" class="btn btn-info btn-lg" role="button">ICF</a>
+				  <a href="https://mrivanplays.com/javadocs/Skins" class="btn btn-info btn-lg" role="button">Skins</a></center>
+				  <br><br><br><br><br><br><br><br><br><br><br>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="contact">
+	<div class="contact">
+		<div class="container container-fluid">
+			<div class="contact-info">
+				<h1>CONTACT</h1>
+				<p>I usually respond under 24 hours</p>
+				<div class="socialIcons">
+					<a href="https://mrivanplays.com/discord/" target="_blank"><img class="HoverBToW" src="./img/discord.png"></a>        
+					<a href="https://mrivanplays.com/resources" target="_blank"><img class="HoverBToW" src="./img/spigot-og.png"></a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
+<div class="footer">
+	<div class="container">
+	  <center><p>© Copyright Ivan Pekov (MrIvanPlays) 2019. All rights reserved</p></center>
+		<!-- Footer Links -->
+	</div>
+		<a href="#home" id="scroll" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 </div>
 
-
+<!-- After Footer -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/5.9.0/typeit.js" />
+    <script src="https://unpkg.com/randomcolor@0.5.3/randomColor.js"></script>
+    <!-- Custom JavaScript for this theme -->
+    <script src="js/main.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+    		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+				});
+			});
+		</script>
+	<script type="text/javascript">
+		$(document).ready(function(){ 
+    		$(window).scroll(function(){ 
+        		if ($(this).scrollTop() > 100) { 
+           		 $('#scroll').fadeIn(); 
+        		} else { 
+            		$('#scroll').fadeOut(); 
+        		} 
+    			});
+    		}); 
+	</script>
 </body>
 </html>
-
-<script src="script.js"></script>
