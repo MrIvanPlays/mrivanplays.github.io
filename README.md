@@ -1,3 +1,1 @@
-# MrIvanPlays Development
-
-Site repository
+Site is no longer on this repository.
